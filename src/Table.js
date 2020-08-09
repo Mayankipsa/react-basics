@@ -2,12 +2,12 @@ import React, { Component } from 'react'
 
 class Table extends Component {
     render() {
-        const {charactersData}=this.props
+        const { charactersData, removeCharacter } = this.props
 
         return (
             <table className='table'>
                 <TableHeader></TableHeader>
-                <TableBody charactersData={charactersData}></TableBody>
+                <TableBody charactersData={charactersData} removeCharacter={removeCharacter}></TableBody>
             </table>
         )
     }
@@ -29,12 +29,15 @@ const TableBody = (props) => {
 
     const rows = props.charactersData.map((row, index) => {
         return (
-          <tr key={index}>
-            <td>{row.name}</td>
-            <td>{row.job}</td>
-          </tr>
+            <tr key={index}>
+                <td>{row.name}</td>
+                <td>{row.job}</td>
+                <td>
+                    <button className='btn btn-primary' onClick={() => props.removeCharacter(index)}>Delete</button>
+                </td>
+            </tr>
         )
-      })
+    })
 
     return (
         <tbody>
