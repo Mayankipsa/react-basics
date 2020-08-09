@@ -1,8 +1,9 @@
 {
+  "homepage": "https://mayankipsa.github.io/react-basics/",
   "name": "react-basics",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://mayankipsa.github.io/react-basics/",
+ 
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
