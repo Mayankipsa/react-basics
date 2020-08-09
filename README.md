@@ -1,5 +1,6 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
+# Live URL
+https://mayankipsa.github.io/react-basics/
 # react-basics
 ReactJS App containing Basic Fundamentals of ReactJS
 ## Available Scripts
