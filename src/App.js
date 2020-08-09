@@ -31,7 +31,9 @@ class App extends Component {
 
     return (
       <div className="container">
-        <h1>Hello, React Again!</h1>
+        <h1>React Basics</h1>
+        <p>Add a character with a name and job to the table using form below.
+        <br/>Data is not saved on server so will be cleaned on refresh.</p>
         <Table charactersData={characters} removeCharacter={this.removeCharacter}></Table>
         <Form handleSubmit={this.handleSubmit} />
       </div>
