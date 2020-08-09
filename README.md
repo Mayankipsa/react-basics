@@ -5,6 +5,9 @@ https://mayankipsa.github.io/react-basics/
 ReactJS App containing Basic Fundamentals of ReactJS
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## reference
+https://www.taniarascia.com/getting-started-with-react/
+
 ## Available Scripts
 
 In the project directory, you can run:
