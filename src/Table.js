@@ -1,37 +1,49 @@
 import React, { Component } from 'react'
 
-class Table extends Component{
+class Table extends Component {
     render() {
         return (
-          <table  className='table'>
-            <thead>
-              <tr>
+            <table className='table'>
+                <TableHeader></TableHeader>
+                <TableBody></TableBody>
+            </table>
+        )
+    }
+
+}
+
+const TableHeader = () => {
+    return (
+        <thead>
+            <tr>
                 <th>Name</th>
                 <th>Job</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
+            </tr>
+        </thead>
+    )
+}
+
+const TableBody = () => {
+    return (
+        <tbody>
+            <tr>
                 <td>Charlie</td>
                 <td>Janitor</td>
-              </tr>
-              <tr>
+            </tr>
+            <tr>
                 <td>Mac</td>
                 <td>Bouncer</td>
-              </tr>
-              <tr>
+            </tr>
+            <tr>
                 <td>Dee</td>
                 <td>Aspiring actress</td>
-              </tr>
-              <tr>
+            </tr>
+            <tr>
                 <td>Dennis</td>
                 <td>Bartender</td>
-              </tr>
-            </tbody>
-          </table>
-        )
-      }
-
+            </tr>
+        </tbody>
+    )
 }
 
 export default Table
